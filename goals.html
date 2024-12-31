@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Goals as a Student</title>
+        <link rel="stylesheet" href="copy.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to My Personal Website</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="copyindex.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="skills.html">Skills I'm Developing</a>
+                        <a href="goals.html">My Goals as a Student</a>
+                        <a href="funfacts.html">Fun Facts About Me</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <a href="javascript:void(0);" class="logout-button" onclick="confirmLogout()">LOG OUT</a>
+            </ul>
+        </nav>
+
+        <section id="section2"></section>
+        <section id="drop">
+            <h2>My Goals as a Student</h2>
+            <p style="text-align: center;">My Goals...</p>
+            <div class="goal-grid">
+                <div class="goal-card" onclick="toggleGoalDetails(1)">
+                    <div class="goal-header" style="background-color: #80ed99;"><strong>Short Term Goal</strong></div>
+                    <p><strong>to pass this sem</strong></p>
+                    <div class="goal-details" id="goal1-details">
+                        <p>and hopefully graduate</p>
+                    </div>
+                </div>
+
+                <div class="goal-card" onclick="toggleGoalDetails(2)">
+                    <div class="goal-header" style="background-color: #45dfb1;"><strong>Long Term Goal</strong></div>
+                    <p><strong>to live a happy life and provide for my family</strong></p>
+                    <div class="goal-details" id="goal2-details">
+                        <p>and also build a family</p>
+                    </div>
+                </div>
+
+                <div class="goal-card" onclick="toggleGoalDetails(3)">
+                    <div class="goal-header" style="background-color: #0ad1c8;"><strong>Personal Development</strong></div>
+                    <p><strong>To be polite</strong></p>
+                    <div class="goal-details" id="goal3-details">
+                        <p>on people.</p>
+                    </div>
+                </div>
+
+                <div class="goal-card" onclick="toggleGoalDetails(4)">
+                    <div class="goal-header" style="background-color: #14919b;"><strong>Career Goals</strong></div>
+                    <p><strong>Become a fulltime developer</strong></p>
+                    <div class="goal-details" id="goal4-details">
+                        <p>in the year 2030</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 arnold. All rights reserved.</p>
+        </footer>
+
+        <div class="footer-divider"></div>
+
+        <script>
+            function toggleGoalDetails(group) {
+                const allDetails = document.querySelectorAll('.goal-details');
+                
+                // Close all other goal details before opening the clicked one
+                allDetails.forEach(detail => {
+                    if (detail.id !== 'goal' + group + '-details') {
+                        detail.classList.remove('active');
+                    }
+                });
+
+                // Toggle the clicked goal's details
+                const goalDetails = document.getElementById('goal' + group + '-details');
+                goalDetails.classList.toggle('active');
+            }
+        </script>
+        
+        <script>
+            function confirmLogout() {
+                const confirmLogout = confirm("Are you sure you want to log out?");
+                if (confirmLogout) {
+                    localStorage.removeItem('isLoggedIn');
+                    window.location.href = 'login.html';
+                } else {
+                    return;
+                }
+            }
+        </script>
+    </body>
+</html>

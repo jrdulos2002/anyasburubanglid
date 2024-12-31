@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Personal Website</title>
+        <link rel="stylesheet" href="copy.css">
+    </head>
+    <body>
+        <header>
+            <h1>Anyas Burubanglid Farm Mountain Resort</h1>
+        </header>
+        <nav>
+            <ul><h2>🌅 Anyas Burubanglid</h2>
+                <li><a href="copyindex.html">HOME</a></li>
+           
+                    <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="skills.html">MENUS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+               
+            </ul>
+        </nav>
+       > <section id="section2"></section>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 1" style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>What we offer</h1></div>
+					
+                </div>
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 2"style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>What we offer </h1></div>
+										
+
+                </div>
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 3"style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>What we offer </h1></div>
+
+
+                </div>
+            </div>
+        </div>
+
+      
+            <section id="drop">
+                <h2>Our Services</h2>
+                <p>We Offer</p>
+                <div class="funfact-container">
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Swimming Pool</p>
+                            </div>
+ <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/29.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Mountain Hiking</p>
+                            </div>
+
+                             <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/18.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Mountain View</p>
+                            </div>
+
+                             <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/28.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Falls</p>
+                            </div>
+
+                            <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/90.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funfact-container">
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Luxury Rooms</p>
+                            </div>
+
+                            <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/11.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Quality Foods</p>
+                            </div>
+
+                            <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/22.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Tables</p>
+                            </div>
+
+                           <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/26.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+
+                    <div class="funfact-card">
+                        <div class="funfact-inner">
+                            <div class="funfact-front">
+                                <p>Tent</p>
+                            </div>
+
+                           <div class="funfact-back" style="position: relative; overflow: hidden;">
+    <img src="Images/9.jpg" 
+         alt="Image 3" 
+         style="width: 100%; height: 100%; object-fit: cover; filter: brightness(60%);">
+</div>
+                        </div>
+                    </div>
+                </div>
+				 <div class="see-more-container">
+                    <a href="contact.html" class="see-more-button">Reserve Now </a>
+            </div>
+        </section>
+        
+        <script>
+            function confirmLogout(){
+                const confirmLogout=confirm("Are you sure you want to log out?");
+                if(confirmLogout){
+                    localStorage.removeItem('isLoggedIn');
+                    window.location.href='login.html';
+                }else{
+                    return;
+                }
+            }
+        </script>
+            <footer>
+    <div class="footer-container">
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>📍 Address: Barangay Burubanglid, Anya's Resort</p>
+            <p>📞 Phone: +63 912 345 6789</p>
+            <p>📧 Email: info@anyasresort.com</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="funfacts.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+				<li><a href="skills.html">Menus</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <p>
+                <a href="https://facebook.com/anyasresort" target="_blank">Facebook</a> | 
+                <a href="https://instagram.com/anyasresort" target="_blank">Instagram</a> | 
+                <a href="https://twitter.com/anyasresort" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Anya's Resort. All rights reserved.</p>
+    </div>
+</footer>
+
+
+        <div class="footer-divider"></div>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Personal Website</title>
+        <link rel="stylesheet" href="copy.css">
+    </head>
+    <body>
+        <header>
+            <h1>Anyas Burubanglid Farm Mountain Resort</h1>
+        </header>
+        <nav>
+            <ul><h2>🌅 Anyas Burubanglid</h2>
+                <li><a href="copyindex.html">HOME</a></li>
+           
+                    <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="skills.html">MENUS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+               
+            </ul>
+        </nav>
+       
+       
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 1" style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>About Us</h1></div>
+					
+                </div>
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 2"style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>About Us </h1></div>
+									
+                </div>
+                <div class="slide">
+                    <img src="Images/resort-hero1.jpg" alt="Image 3"style="filter: brightness(60%);">
+                    <div class="text-overlay"><h1>About Us </h1></div>
+										
+                </div>
+            </div>
+        </div>
+
+        
+        <section id="drop">
+            <h2>Our Menus</h2>
+            <p> Affordable and best tasting-recipes.</p>
+            <section id="skills">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'IT')">All Time Favorites</button>
+                    <button class="tablinks" onclick="openTab(event, 'GraphicDesign')">Pasta</button>
+                    <button class="tablinks" onclick="openTab(event, 'WebDeveloping')">Desserts</button>
+                    <button class="tablinks" onclick="openTab(event, 'ProblemSolving')">Entree</button>
+                </div>
+
+                <div id="IT" class="tabcontent">
+                    <h3>All Time Favorites</h3>
+                  <img src="Images/6.jpg" alt="IT" style="width:60%; height:auto; position:centered;">
+</div>
+
+                <div id="GraphicDesign" class="tabcontent" style="display: none;">
+    <h3>Pasta</h3>
+    <img src="Images/3.jpg" alt="Graphic Design" style="width:60%; height:auto; position:centered;">
+</div>
+
+
+                <div id="WebDeveloping" class="tabcontent" style="display: none;">
+                    <h3>Desserts</h3>
+                  <img src="Images/2.jpg" alt="WebDeveloping" style="width:60%; height:auto; position:centered;">
+</div>
+
+                <div id="ProblemSolving" class="tabcontent" style="display: none;">
+                    <h3>Entree</h3>
+                  <img src="Images/4.jpg" alt="ProblemSolving" style="width:60%; height:auto; position:centered;">
+</div>
+            </section>
+        </section>
+     <footer>
+    <div class="footer-container">
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>📍 Address: Barangay Burubanglid, Anya's Resort</p>
+            <p>📞 Phone: +63 912 345 6789</p>
+            <p>📧 Email: info@anyasresort.com</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="funfacts.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <p>
+                <a href="https://facebook.com/anyasresort" target="_blank">Facebook</a> | 
+                <a href="https://instagram.com/anyasresort" target="_blank">Instagram</a> | 
+                <a href="https://twitter.com/anyasresort" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Anya's Resort. All rights reserved.</p>
+    </div>
+</footer>
+
+        <div class="footer-divider"></div>
+
+        <script>
+            function openTab(evt, tabName){
+                const tabcontents = document.getElementsByClassName("tabcontent");
+                for(let i = 0; i < tabcontents.length; i++){
+                    tabcontents[i].style.display="none";
+                }
+
+                const tablinks = document.getElementsByClassName("tablinks");
+                for(let i = 0; i < tablinks.length; i++){
+                    tablinks[i].classList.remove("active");
+                }
+                    document.getElementById(tabName).style.display="block";
+                    evt.currentTarget.classList.add("active");
+                }
+
+               document.addEventListener("DOMContentLoaded", function(){
+                    document.querySelector('.tablinks').click();
+                });
+
+            </script>
+            <script>
+                function confirmLogout(){
+                    const confirmLogout = confirm("Are you sure you want to log out?");
+                    if(confirmLogout){
+                        localStorage.removeItem('isLoggedIn');
+                        window.location.href = 'login.html';
+                    }else{
+                        return;
+                    }
+                }
+        </script>
+    </body>
+</html>
